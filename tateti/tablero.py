@@ -2,7 +2,7 @@ class PosOcupadaException(Exception):
     pass
 
 class Tablero:
-    def init(self):
+    def __init__(self):
         self.contenedor = [
             ["", "", ""],
             ["", "", ""],

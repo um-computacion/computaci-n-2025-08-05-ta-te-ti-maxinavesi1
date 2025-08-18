@@ -1,7 +1,8 @@
-from jugador import Jugador
+from tateti.jugador import Jugador
+
 
 class Tateti:
-    def init(self, nombre_x, nombre_o):
+    def __init__(self, nombre_x, nombre_o):
         self.jugador_x = Jugador(nombre_x, "X")
         self.jugador_o = Jugador(nombre_o, "O")
         self.turno = self.jugador_x
@@ -42,4 +43,4 @@ class Tateti:
             for casilla in fila:
                 if casilla == "":
                     return False
-        return
+        return True
